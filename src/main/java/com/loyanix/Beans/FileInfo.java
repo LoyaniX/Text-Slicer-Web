@@ -1,6 +1,8 @@
 package com.loyanix.Beans;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -14,12 +16,12 @@ public class FileInfo implements Serializable {
     private int lengthOfShortestWord;
     private int avgLengthWord;
     private int avgLengthLine;
-    private List<LineInfo> lineInfos;
+    private Set<LineInfo> lineInfos = new HashSet<LineInfo>(0);
 
     public FileInfo() {
     }
 
-    public FileInfo(int id, String fileName, String longestWord, int lengthOfLongestWord, String shortestWord, int lengthOfShortestWord, int avgLengthWord, int avgLengthLine, List<LineInfo> lineInfos) {
+    public FileInfo(int id, String fileName, String longestWord, int lengthOfLongestWord, String shortestWord, int lengthOfShortestWord, int avgLengthWord, int avgLengthLine, Set<LineInfo> lineInfos) {
         this.id = id;
         this.fileName = fileName;
         this.longestWord = longestWord;
@@ -63,7 +65,7 @@ public class FileInfo implements Serializable {
 
     public void setAvgLengthLine(int avgLengthLine) { this.avgLengthLine = avgLengthLine; }
 
-    public List<LineInfo> getLineInfos() { return lineInfos; }
+    public Set<LineInfo> getLineInfos() { return lineInfos; }
 
-    public void setLineInfos(List<LineInfo> lineInfos) { this.lineInfos = lineInfos; }
+    public void setLineInfos(Set<LineInfo> lineInfos) { this.lineInfos = lineInfos; }
 }

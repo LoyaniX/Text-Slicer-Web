@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 public class LineInfo implements Serializable {
 
-    private static final long serialVersionUID = -2L;
 
     private int lineId;
     private int fileId;

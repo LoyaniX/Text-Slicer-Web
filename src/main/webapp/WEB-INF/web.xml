@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>FileInfoServlet</servlet-name>
+        <servlet-class>com.loyanix.Servlets.FileInfoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LineInfoServlet</servlet-name>
+        <servlet-class>com.loyanix.Servlets.LineInfoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FileInfoServlet</servlet-name>
+        <url-pattern>/fileinfo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LineInfoServlet</servlet-name>
+        <url-pattern>/lineinfo</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -9,11 +9,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class FileInfoServlet extends HttpServlet {
-    protected void post(){
+    protected void doPost(){
 
     }
 
-    protected void get(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("fileInfo", FileInfoDao.get());
         request.getRequestDispatcher("fileinfo.jsp").forward(request,response);
     }
