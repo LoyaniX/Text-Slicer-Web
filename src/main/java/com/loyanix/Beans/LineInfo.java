@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 public class LineInfo implements Serializable {
 
+    private static final long serialVersionUID = -2L;
+
     private int lineId;
     private int fileId;
     private String longestWord;
@@ -12,6 +14,13 @@ public class LineInfo implements Serializable {
     private int lengthOfShortestWord;
     private int avgLengthWord;
     private int lengthLine;
+    private FileInfo fileInfo;
+
+
+
+    public void setFileInfo(FileInfo fileInfo) {
+        this.fileInfo = fileInfo;
+    }
 
     public LineInfo() {
     }
@@ -58,4 +67,8 @@ public class LineInfo implements Serializable {
     public int getLengthLine() { return lengthLine; }
 
     public void setLengthLine(int lengthLine) { this.lengthLine = lengthLine; }
+
+    public FileInfo getFileInfo() {
+        return fileInfo;
+    }
 }

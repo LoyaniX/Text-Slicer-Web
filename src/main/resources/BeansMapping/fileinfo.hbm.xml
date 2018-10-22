@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.loyanix.Beans">
+    <class name="FileInfo" table="INFO_ABOUT_FILES">
+        <id name="id" column="ID_FILE" type="java.lang.Integer">
+            <generator class="assigned"/>
+        </id>
+        <property name="fileName" column="NAME_OF_FILE" type="java.lang.String"/>
+        <property name="longestWord" column="LONGEST_WORD_IN_FILE" type="java.lang.String"/>
+        <property name="lengthOfLongestWord" column="LENGTH_WORD_LONG" type="java.lang.Integer"/>
+        <property name="shortestWord" column="SHORTEST_WORD_IN_FILE" type="java.lang.String"/>
+        <property name="lengthOfShortestWord" column="LENGTH_WORD_SHORT" type="java.lang.Integer"/>
+        <property name="avgLengthWord" column="AVG_WORD_LENGTH_IN_FILE" type="java.lang.Integer"/>
+        <property name="avgLengthLine" column="AVG_LINE_LENGTH_IN_FILE" type="java.lang.Integer"/>
+        <set name="lineInfos" table="INFO_ABOUT_LINES">
+            <key>
+                <column name="ID_FILE"/>
+            </key>
+            <one-to-many class="LineInfo"/>
+        </set>
+    </class>
+</hibernate-mapping>

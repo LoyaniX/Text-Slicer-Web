@@ -2,6 +2,7 @@ package com.loyanix.Beans;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Set;
 
 public class FileInfo implements Serializable {
 
