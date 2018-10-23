@@ -1,0 +1,29 @@
+#tabU, #formAddOrder, #formDeleteOrder, #formEditOrder, #tabP, #tabO, #formAddProd, #formEditProd,#formDeleteProd, #formAdd, #formEdit, #formDelete, #row {
+    display: none;
+}
+
+#helloPage{
+    display: table;
+}
+.but{
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+@media print {
+    .container{
+        width: auto;
+    }
+}
+
+.table-container {
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}

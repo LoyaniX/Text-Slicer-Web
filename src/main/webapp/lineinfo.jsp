@@ -1,8 +1,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<div class="title">Line statistics</div>
-<table>
+<div align="center">
+<h4>Line's info of file</h4>
+<table class="table table-striped users-table col-md-8" style="margin: 10px">
+    <thead class="thead-dark">
     <tr>
         <th>Id Line</th>
         <th>Id File</th>
@@ -13,6 +15,7 @@
         <th>Average length of words</th>
         <th>Length of line</th>
     </tr>
+    </thead>
     <tbody>
     <c:forEach items="${requestScope.lineInfo}" var="lineInfo">
         <tr>
@@ -28,4 +31,4 @@
     </c:forEach>
     </tbody>
 </table>
-
+</div>

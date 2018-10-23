@@ -3,34 +3,27 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>File Statistics Viewer</title>
+    <title>LoyaniX project</title>
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script src="js/jquery-latest.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Bootstrap -->
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
 </head>
 <body>
 
-<div id="main_container">
-
-    <div class="center_content">
-
-        <div class="center_left">
-            <div class="welcome_box">
-                <p class="welcome">
-                    <span class="orange">Task 2</span><br />
-                    Implement web-interface for viewing collected statistics using Servlet/JSP + HTML/CSS/JS.
-                </p>
-            </div>
-
-            <div class="features">
-                <div class="title">File statistics</div>
-                <a href='fileinfo'>Get file statistics</a>
-            </div>
-
+<div id="container-fluid" align="center">
+    <div class="features text-center">
+        <H1 class="container-fluid">File statistics</H1>
+        <div align="center">
+            <a class="btn btn-dark" href='fileinfo'>Show info about files</a>
         </div>
-        <div class="clear"></div>
     </div>
-
 </div>
 
 </body>
