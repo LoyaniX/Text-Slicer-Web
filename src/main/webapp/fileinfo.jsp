@@ -46,7 +46,7 @@
                         <td>${fileInfo.lengthOfShortestWord}</td>
                         <td>${fileInfo.avgLengthWord}</td>
                         <td>${fileInfo.avgLengthLine}</td>
-                        <td id="load-result${fileInfo.id}"><a href="#">show line statistic</a></td>
+                        <td id="load-result${fileInfo.id}"><a href="#">show line info</a></td>
                     </tr>
                     </tbody> </c:forEach>
             </table>
