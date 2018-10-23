@@ -16,15 +16,13 @@
 
 </head>
 <body>
-
-<div id="container-fluid" align="center">
-    <div class="features text-center">
-        <H1 class="container-fluid">File statistics</H1>
-        <div align="center">
-            <a class="btn btn-dark" href='fileinfo'>Show info about files</a>
+    <div id="container-fluid" align="center">
+        <div class="features text-center">
+            <H1 class="container-fluid">File statistics</H1>
+            <div align="center">
+                <a class="btn btn-dark" href='fileinfo'>Show info about files</a>
+            </div>
         </div>
     </div>
-</div>
-
 </body>
 </html>

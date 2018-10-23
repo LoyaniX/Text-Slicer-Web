@@ -35,7 +35,7 @@
                     <th>Show lines</th>
                 </tr>
                 </thead>
-                <c:forEach items="${fileinfo}" var="fileInfo">
+                <c:forEach items="${fileInfo}" var="fileInfo">
                     <tbody>
                     <tr>
                         <td>${fileInfo.id}</td>
